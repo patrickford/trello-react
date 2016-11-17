@@ -8,3 +8,7 @@
     border: 1px solid blue;
     margin: 5px;
 }
+
+input {
+    margin: 0 10px;
+}
