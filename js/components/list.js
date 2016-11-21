@@ -10,8 +10,7 @@ var List = React.createClass({
                     <input type="text" className="inputText" name="input" onChange={this.props.onChange}/>
                     <input type="submit" value="Submit"/>
                 </form>
-            </div>
-            
+            </div>            
             )
     }
 });
