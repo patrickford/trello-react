@@ -6,13 +6,16 @@ var ListContainer = React.createClass({
     getInitialState: function() {
         return {
             text: '',
-            cards: [<Card key='1' text="This is some text"/>,
+            cards: [
+                <Card key='1' text="This is some text"/>,
                 <Card key='2' text="This is second text"/>,
-                <Card key='3' text="This is third text"/>],
-            title: ''
+                <Card key='3' text="This is third text"/>
+            ],
+            title: 'test title'
         }
     },
     onAddInputChanged: function(event) {
+        console.log(event)
         this.setState({
             text: event.target.value
         })
@@ -29,7 +32,7 @@ var ListContainer = React.createClass({
     },
 
     render: function(props) {
-        return <List cards={this.state.cards} onChange={this.onAddInputChanged} onSubmit={this.onAddSubmit} title={this.props.title}/>
+        return <List cards={this.state.cards} changed={this.onAddInputChanged} submitted={this.onAddSubmit} title={this.props.title}/>
     }
 });
 

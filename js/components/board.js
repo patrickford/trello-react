@@ -9,7 +9,7 @@ var Board = React.createClass({
                 <ListContainer title="Second"/>
                 <ListContainer title="Third"/>
             </div>
-            )
+        )
     }
 });
 

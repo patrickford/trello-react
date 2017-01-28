@@ -7,7 +7,7 @@ var Card = React.createClass({
             <div className="card">
                 {this.props.text}
             </div>
-            )
+        );
     }
 });
 
